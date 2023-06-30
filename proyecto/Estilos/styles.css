@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+/*Barra de menu*/
+nav{
+    background: rgba(24, 178, 216, 0.473);
+    height: 80px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    height: 40px;
+    /*width: 200px;*/
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color:#fff;
+    font-size: 16px;
+    padding: 2px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+li a.active, li a:hover{
+    background: rgba(255, 0, 0, 0.664);
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+#check:checked ~ ul{
+    left: 0;
+}
+
+
+
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background: rgba(10, 34, 143, 0.473);
+}
+
+.container_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    /*margin-top: 100px;*/
+}
+.box_footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+.box_footer .logo2 img{
+    width: 180px;
+}
+.box_footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #cacaca;
+    font-size: 18px;
+}
+.box_footer h2{
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 700;
+}
+
+.box_footer a{
+    margin-top: 10px;
+    color: #cacaca;
+    font-weight: 600;
+}
+.box_footer a:hover{
+    opacity: 0.8;
+}
+.box_footer a .fab{
+    font-size: 20px;
+}
+
+.box_copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+.box_copyright p{
+    margin-top: 20px;
+    color: #cacaca;
+}
+.box_copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #cacaca;
+}
+form{
+    margin: 0 auto;
+    }
+    form h1{
+        text-align: center;
+ 
+    }
+form section{
+    text-align: center;
+    padding: 0 auto;
+}
+
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "lato", sans-serif;
+  }
+
+  
+  
+  .signupFrm {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  
+    .form {
+      background-color: #f3b7d3;
+      width: 400px;
+      border-radius: 8px;
+      padding: 20px 40px;
+      box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+    }
+    
+    .title {
+      font-size: 30px;
+     }
+  
+    .inputContainer {
+      position: relative;
+      height: 45px;
+      width: 90%;
+      margin-bottom: 17px;
+    }
+  
+    
+  .input {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+    border: 1px solid #828386bb;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+  }
+  
+  
+  ::placeholder {
+    color: transparent;
+  }
+
+  .label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color:#f3b7d3;
+    color:#828386bb;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+  }
+
+  .submitBtn {
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: #f3b7d3;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  
+  .submitBtn:hover {
+    background-color: rgba(0, 0, 0, 0.863);
+    transform: translateY(-2px);
+  }
+
+  .input:focus + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.863);
+  }
+
+  .input:focus {
+    border: 2px solid rgba(0, 0, 0, 0.863);
+  }
+
+  .input:not(:placeholder-shown)+ .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  
